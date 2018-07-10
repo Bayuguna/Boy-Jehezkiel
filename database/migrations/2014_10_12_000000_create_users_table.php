@@ -15,7 +15,7 @@ class CreateUsersTable extends Migration {
 			$table->increments('id');
 			$table->string('name');
 			$table->string('teamname');
-			$table->enum('divisi', ['Dota', 'ML']);
+			$table->enum('divisi', ['Dota', 'Mobile Legend']);
 			$table->text('description');
 			$table->string('email')->unique();
 			$table->string('phonenumber');
